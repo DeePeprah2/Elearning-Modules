@@ -142,8 +142,3 @@ resource "aws_route_table_association" "private_subnet_az2_rt_association" {
   route_table_id = aws_route_table.private_route_table.id
 }
 
-
-# create private data subnet az1
-
-
-# create private data subnet az2
