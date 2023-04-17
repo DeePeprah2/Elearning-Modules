@@ -1,4 +1,4 @@
-// configure aws provider to establish a secure connection between terraform and aws
+# configure aws provider to establish a secure connection between terraform and aws
 provider "aws" {
   region = var.region
 
@@ -10,7 +10,16 @@ provider "aws" {
     }
   }
 }
-
+# terraform provider
+terraform {
+  required_providers {
+    aws = {
+      source  = "hashicorp/aws"
+      version = "~> 4.0"
+    }
+  }
+  required_version = ">= 1.1.5"
+}
 
 # create vpc
 resource "aws_vpc" "elearning-vpc" {
