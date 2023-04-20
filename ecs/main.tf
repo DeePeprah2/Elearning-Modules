@@ -29,3 +29,12 @@ resource "aws_ecs_task_definition" "elearning" {
     }
 } 
 
+# create capacity provider
+
+# create task definition 
+
+# create es services 
+
+# create task execution role
+
+#
