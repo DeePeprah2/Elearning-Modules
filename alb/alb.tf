@@ -15,7 +15,6 @@ resource "aws_lb" "elearning_alb" {
   tags = {
     Environment = "dev"
   }
-}
 
 
 # create target group
